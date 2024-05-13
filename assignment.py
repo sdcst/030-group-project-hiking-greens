@@ -2,20 +2,8 @@
 # Volume Calculator
 # Feel free to rename your variables
 
-import math
-def menu():
-    input("For The Volume Of A Square Enter")
-    if input=="1":
-        volume_of_square
-    if input=="2":
-    if input=="3":
-    if input=="4":
-    if input=="5":
-    if input=="6":
-    if input=="7":
-    if input=="8":
 
-
+def title():
     # Will display a title screen
     # input parameters: none needed
     # output parameters: None
@@ -47,3 +35,30 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+def volume_of_sphere(r):
+    return  4/3 * pi * r^3
+
+
+def area_of_sphere(r):
+    return 4* pi * r^2
+
+def area_of_spure(x):
+    return x^2
+
+def volume_of_spure(x):
+    return x^3
+
+def volume_of_rectangle(L,W,H):
+    return L*W*H
+
+def area_of_rectangle(W,L):
+    return W * L
+
+
+
+def CAD_to_USD()
+    
+ 
