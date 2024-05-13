@@ -2,8 +2,20 @@
 # Volume Calculator
 # Feel free to rename your variables
 
+import math
+def menu():
+    input("For The Volume Of A Square Enter")
+    if input=="1":
+        volume_of_square
+    if input=="2":
+    if input=="3":
+    if input=="4":
+    if input=="5":
+    if input=="6":
+    if input=="7":
+    if input=="8":
 
-def title():
+
     # Will display a title screen
     # input parameters: none needed
     # output parameters: None
