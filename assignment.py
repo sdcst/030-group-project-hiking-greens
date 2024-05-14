@@ -6,25 +6,24 @@
 import math
 def menu():
     print("For The Volume Of A Square Enter: '1'\n For The Area Of A Square Enter: '2'\n For The Volume Of A Rectangle Enter: '3'\n For The Area Of A Rectangle Enter: '4'\n For The Volume Of A Sphere Enter: '5'\n For The Area Of A Sphere Enter: '6'\n For Sales Tax Enter: '7'\n For Canadian To AMerican Currency Exchange Enter: '8'")
-    input()
-    if input=="1":
-    input(" For The Volume Of A Square Enter: 1\n For The Area Of A Square Enter: 2\n For The Volume Of A Rectangle Enter: 3\n For The Area Of A Rectangle Enter: 4\n For The Volume Of A Sphere Enter: 5\n For The Area Of A Sphere Enter: 6\n For Sales Tax Enter: 7\n For Canadian To AMerican Currency Exchange Enter: 8\n")
+
+
     if input==1:
         volume_of_sqaure
     if input==2:
-         area_of_sqaure
+        area_of_sqaure
     if input==3:
-          volume_of_rectangle
+        volume_of_rectangle
     if input==4:
-           area_of_rectangle
+        area_of_rectangle
     if input==5:
-            volume_of_sphere
+        volume_of_sphere
     if input==6:
-             area_of_sphere
+            area_of_sphere
     if input==7:
-            calcTax
+        calcTax
     if input==8:
-                usd_to_cad
+        usd_to_cad
     if input==9:
         print("Goodbye")
 
@@ -74,9 +73,9 @@ def area_of_sphere():
     return 4* math.pi *r^2
 
 def area_of_sqaure():
-x=input
-total=x^2
-print(total)
+    x=input
+    total=x^2
+    print(total)
 
 def volume_of_sqaure():
     x = input("enter an aside ")
