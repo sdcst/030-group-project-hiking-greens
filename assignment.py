@@ -2,16 +2,11 @@
 # Volume Calculator
 # Feel free to rename your variables
 
-<<<<<<< HEAD
 import math,haruto
 
 
-=======
-
-import math
->>>>>>> dad24521328d2f1cf6208560d3109042f5584166
 def menu():
-    print("For The Volume Of A Square Enter: '1'\n For The Area Of A Square Enter: '2'\n For The Volume Of A Rectangle Enter: '3'\n For The Area Of A Rectangle Enter: '4'\n For The Volume Of A Sphere Enter: '5'\n For The Area Of A Sphere Enter: '6'\n For Sales Tax Enter: '7'\n For Canadian To AMerican Currency Exchange Enter: '8'")
+    print(" For The Volume Of A Square Enter: '1'\n For The Area Of A Square Enter: '2'\n For The Volume Of A Rectangle Enter: '3'\n For The Area Of A Rectangle Enter: '4'\n For The Volume Of A Sphere Enter: '5'\n For The Area Of A Sphere Enter: '6'\n For Sales Tax Enter: '7'\n For Canadian To AMerican Currency Exchange Enter: '8'")
     input()
     if input=="1":
         volume_of_sqaure
@@ -32,6 +27,7 @@ def menu():
     if input=="9":
         print("Goodbye")
 
+pass
 
 def title():
     # Will display a title screen
@@ -89,13 +85,10 @@ def area_of_rectangle(W,L):
 
 
 
-<<<<<<< HEAD
-def CAD_to_USD():
-=======
+
 def usd_to_cad(value):
  value=input('Enter Amount In USD')
  return value*1.37
->>>>>>> dad24521328d2f1cf6208560d3109042f5584166
     
  
 pass
@@ -105,9 +98,8 @@ def calcTax():
  total=x+tax
  print("Amount Of Taxes{tax}. Total Amount",total)
 pass
-<<<<<<< HEAD
 
+menu()
 
-=======
 menu
->>>>>>> dad24521328d2f1cf6208560d3109042f5584166
+
