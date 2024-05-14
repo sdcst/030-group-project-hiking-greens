@@ -2,11 +2,10 @@
 # Volume Calculator
 # Feel free to rename your variables
 
-import math,haruto
 
-
+import math
 def menu():
-    print(" For The Volume Of A Square Enter: '1'\n For The Area Of A Square Enter: '2'\n For The Volume Of A Rectangle Enter: '3'\n For The Area Of A Rectangle Enter: '4'\n For The Volume Of A Sphere Enter: '5'\n For The Area Of A Sphere Enter: '6'\n For Sales Tax Enter: '7'\n For Canadian To AMerican Currency Exchange Enter: '8'")
+    print("For The Volume Of A Square Enter: '1'\n For The Area Of A Square Enter: '2'\n For The Volume Of A Rectangle Enter: '3'\n For The Area Of A Rectangle Enter: '4'\n For The Volume Of A Sphere Enter: '5'\n For The Area Of A Sphere Enter: '6'\n For Sales Tax Enter: '7'\n For Canadian To AMerican Currency Exchange Enter: '8'")
     input()
     if input=="1":
         volume_of_sqaure
@@ -27,7 +26,6 @@ def menu():
     if input=="9":
         print("Goodbye")
 
-pass
 
 def title():
     # Will display a title screen
@@ -64,26 +62,33 @@ if __name__ == "__main__":
 
 
 
-def volume_of_sphere(r):
+def volume_of_sphere():
+    r = input("enter a radius")
     return  4/3 * math.pi * r^3
 
 
-def area_of_sphere(r):
-    return 4* math.pi * r^2
+def area_of_sphere():
+    r = input("enter a radius")
+    return 4* math.pi *r^2
 
-def area_of_sqaure(x):
+def area_of_sqaure():
+    x = input("enter an aside ")
     return x^2
 
-def volume_of_sqaure(x):
+def volume_of_sqaure():
+    x = input("enter an aside ")
     return x^3
 
-def volume_of_rectangle(L,W,H):
+def volume_of_rectangle():
+    L = input("enter a length ")
+    W = input("enter a wides ")
+    H = input("enter a height ")
     return L*W*H
 
-def area_of_rectangle(W,L):
+def area_of_rectangle():
+    L = input("enter a length ")
+    W = input("enter a wides ")
     return W * L
-
-
 
 
 def usd_to_cad(value):
@@ -99,7 +104,7 @@ def calcTax():
  print("Amount Of Taxes{tax}. Total Amount",total)
 pass
 
-menu()
 
-menu
+
+
 
