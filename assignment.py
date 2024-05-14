@@ -8,15 +8,24 @@ def menu():
     print("For The Volume Of A Square Enter: '1'\n For The Area Of A Square Enter: '2'\n For The Volume Of A Rectangle Enter: '3'\n For The Area Of A Rectangle Enter: '4'\n For The Volume Of A Sphere Enter: '5'\n For The Area Of A Sphere Enter: '6'\n For Sales Tax Enter: '7'\n For Canadian To AMerican Currency Exchange Enter: '8'")
     input()
     if input=="1":
-     if input=="2":
-      if input=="3":
-       if input=="4":
-        if input=="5":
-         if input=="6":
-          if input=="7":
+        volume_of_sqaure
+    if input=="2":
+         area_of_sqaure
+    if input=="3":
+          volume_of_rectangle
+    if input=="4":
+           area_of_rectangle
+    if input=="5":
+            volume_of_sphere
+    if input=="6":
+             area_of_sphere
+    if input=="7":
             calcTax
-if input=="8":
- pass
+    if input=="8":
+                usd_to_cad
+    if input=="9":
+        print("Goodbye")
+
 
 def title():
     # Will display a title screen
@@ -39,11 +48,11 @@ def instructions():
 
 def main():
     """
+    
     main block of code that will run your program and control program flow
     You will need to include a while loop to keep repeating the commands until
     the user chooses to exit
     """
-
     while True:
         # keep giving options to choose menu options until they choose to exit
         pass
@@ -60,10 +69,10 @@ def volume_of_sphere(r):
 def area_of_sphere(r):
     return 4* math.pi * r^2
 
-def area_of_spure(x):
+def area_of_sqaure(x):
     return x^2
 
-def volume_of_spure(x):
+def volume_of_sqaure(x):
     return x^3
 
 def volume_of_rectangle(L,W,H):
@@ -86,4 +95,4 @@ def calcTax():
  total=x+tax
  print("Amount Of Taxes{tax}. Total Amount",total)
 pass
-
+menu
