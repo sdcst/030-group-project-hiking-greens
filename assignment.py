@@ -5,7 +5,7 @@
 
 import math
 def menu():
-    print("For The Volume Of A Square Enter: '1'\n For The Area Of A Square Enter: '2'\n For The Volume Of A Rectangle Enter: '3'\n For The Area Of A Rectangle Enter: '4'\n For The Volume Of A Sphere Enter: '5'\n For The Area Of A Sphere Enter: '6'\n For Sales Tax Enter: '7'\n For Canadian To AMerican Currency Exchange Enter: '8'")
+    print(" For The Volume Of A Square Enter: '1'\n For The Area Of A Square Enter: '2'\n For The Volume Of A Rectangle Enter: '3'\n For The Area Of A Rectangle Enter: '4'\n For The Volume Of A Sphere Enter: '5'\n For The Area Of A Sphere Enter: '6'\n For Sales Tax Enter: '7'\n For Canadian To AMerican Currency Exchange Enter: '8'")
     input()
     if input=="1":
         volume_of_sqaure
@@ -26,6 +26,7 @@ def menu():
     if input=="9":
         print("Goodbye")
 
+pass
 
 def title():
     # Will display a title screen
@@ -95,4 +96,4 @@ def calcTax():
  total=x+tax
  print("Amount Of Taxes{tax}. Total Amount",total)
 pass
-menu
+menu()
