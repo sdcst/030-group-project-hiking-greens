@@ -1,5 +1,7 @@
 #!python3
-from math import sqrt
-import assignment
-assignment.menu()
-assignment.area_of_sqaure
+
+def calcTax():
+ x=input("Enter Product Price Before Tax")
+ tax=x*0.12
+ total=x+tax
+ print("Amount Of Taxes{tax}. Total Amount",total)
