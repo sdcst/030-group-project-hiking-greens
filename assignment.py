@@ -5,24 +5,24 @@
 
 import math
 def menu():
-    input("For The Volume Of A Square Enter: '1'\n For The Area Of A Square Enter: '2'\n For The Volume Of A Rectangle Enter: '3'\n For The Area Of A Rectangle Enter: '4'\n For The Volume Of A Sphere Enter: '5'\n For The Area Of A Sphere Enter: '6'\n For Sales Tax Enter: '7'\n For Canadian To AMerican Currency Exchange Enter: '8'\n ")
-    if input==1:
-        volume_of_sqaure
-    elif input==2:
-        area_of_sqaure
-    elif input==3:
-        volume_of_rectangle
-    elif input==4:
-        area_of_rectangle
-    elif input==5:
-        volume_of_sphere
-    elif input==6:
-            area_of_sphere
-    elif input==7:
-        calcTax
-    elif input==8:
-        usd_to_cad
-    elif input==9:
+    x = int(input("For The Volume Of A Square Enter: '1'\n For The Area Of A Square Enter: '2'\n For The Volume Of A Rectangle Enter: '3'\n For The Area Of A Rectangle Enter: '4'\n For The Volume Of A Sphere Enter: '5'\n For The Area Of A Sphere Enter: '6'\n For Sales Tax Enter: '7'\n For Canadian To AMerican Currency Exchange Enter: '8'\n "))
+    if x==1:
+        volume_of_sqaure()
+    elif x==2:
+        area_of_sqaure()
+    elif x==3:
+        volume_of_rectangle()
+    elif x==4:
+        area_of_rectangle()
+    elif x==5:
+        volume_of_sphere()
+    elif x==6:
+            area_of_sphere()
+    elif x==7:
+        calcTax()
+    elif x==8:
+        usd_to_cad()
+    elif x==9:
         print("Goodbye")
 pass
 
@@ -42,10 +42,12 @@ def area_of_sqaure():
     ttal=x**2
     print(ttal)
     return ttal
+
 def volume_of_sqaure():
     x = int(input("enter a length "))
     final=x**3
     print("The Volume is",final)
+    return final
  
 
 def volume_of_rectangle():
@@ -61,12 +63,12 @@ def area_of_rectangle():
 
 
 
-def usd_to_cad(value):
- value=input('Enter Amount In USD')
- return value*1.37
+def usd_to_cad():
+    c=int(input('Enter Amount In USD'))
+    tootal=c*1.37
+    print(tootal)
     
- 
-pass
+
 def calcTax():
     x=input("Enter Product Price Before Tax")
     tax=x*0.12
@@ -75,11 +77,5 @@ def calcTax():
     return total
 
 
-<<<<<<< Updated upstream
-menu()
-=======
-
-
 menu()
 
->>>>>>> Stashed changes
