@@ -29,16 +29,18 @@ pass
 
 
 def volume_of_sphere():
-    r = input("enter a radius")
+    r = int(input("enter a radius"))
     return  4/3 * math.pi * r**3
 
 
 def area_of_sphere():
-    r = input("enter a radius")
-    return 4* math.pi *r**2
+    r = int(input("enter a radius"))
+    area =  4* math.pi *r**2
+    print(area)
+    return area
 
 def area_of_sqaure():
-    x=input
+    x=int(input("enter a aside"))
     ttal=x**2
     print(ttal)
     return ttal
@@ -51,20 +53,20 @@ def volume_of_sqaure():
  
 
 def volume_of_rectangle():
-    L = input("enter a length ")
-    W = input("enter a wides ")
-    H = input("enter a height ")
+    L = int(input("enter a length "))
+    W = int(input("enter a wides "))
+    H = int(input("enter a height "))
     return L*W*H
 
 def area_of_rectangle():
-    L = input("enter a length ")
-    W = input("enter a wides ")
+    L = int(input("enter a length "))
+    W = int(input("enter a wides "))
     return W * L
 
 
 
 def usd_to_cad():
-    c=int(input('Enter Amount In USD'))
+    c=(input('Enter Amount In USD'))
     tootal=c*1.37
     print(tootal)
     
