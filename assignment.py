@@ -66,13 +66,13 @@ def area_of_rectangle():
 
 
 def usd_to_cad():
-    c=(input('Enter Amount In USD'))
+    c=int(input('Enter Amount In USD'))
     tootal=c*1.37
     print(tootal)
     
 
 def calcTax():
-    x=input("Enter Product Price Before Tax")
+    x=int(input("Enter Product Price Before Tax"))
     tax=x*0.12
     total=x+tax
     print("Amount Of Taxes{tax}. Total Amount",total)
