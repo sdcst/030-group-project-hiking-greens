@@ -75,4 +75,11 @@ def calcTax():
     return total
 
 
+<<<<<<< Updated upstream
 menu()
+=======
+
+
+menu()
+
+>>>>>>> Stashed changes
