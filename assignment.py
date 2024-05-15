@@ -28,24 +28,6 @@ def menu():
         print("Goodbye")
 
 
-def title():
-    # Will display a title screen
-    # input parameters: none needed
-    # output parameters: None
-    # Author: Copper
-    # Modified:
-    # title
- pass
-
-def instructions():
-    # Will display instructions
-    # input parameters: none needed
-    # output parameters: None
-    # Author:
-    # Modified:
-    return None
-
-
 
 def main():
     """
