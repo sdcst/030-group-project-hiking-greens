@@ -5,63 +5,48 @@
 
 import math
 def menu():
-    print("For The Volume Of A Square Enter: '1'\n For The Area Of A Square Enter: '2'\n For The Volume Of A Rectangle Enter: '3'\n For The Area Of A Rectangle Enter: '4'\n For The Volume Of A Sphere Enter: '5'\n For The Area Of A Sphere Enter: '6'\n For Sales Tax Enter: '7'\n For Canadian To AMerican Currency Exchange Enter: '8'")
-
-
+    input("For The Volume Of A Square Enter: '1'\n For The Area Of A Square Enter: '2'\n For The Volume Of A Rectangle Enter: '3'\n For The Area Of A Rectangle Enter: '4'\n For The Volume Of A Sphere Enter: '5'\n For The Area Of A Sphere Enter: '6'\n For Sales Tax Enter: '7'\n For Canadian To AMerican Currency Exchange Enter: '8'\n ")
     if input==1:
         volume_of_sqaure
-    if input==2:
+    elif input==2:
         area_of_sqaure
-    if input==3:
+    elif input==3:
         volume_of_rectangle
-    if input==4:
+    elif input==4:
         area_of_rectangle
-    if input==5:
+    elif input==5:
         volume_of_sphere
-    if input==6:
+    elif input==6:
             area_of_sphere
-    if input==7:
+    elif input==7:
         calcTax
-    if input==8:
+    elif input==8:
         usd_to_cad
-    if input==9:
+    elif input==9:
         print("Goodbye")
-
-
-
-def main():
-    """
-    
-    main block of code that will run your program and control program flow
-    You will need to include a while loop to keep repeating the commands until
-    the user chooses to exit
-    """
-    while True:
-        # keep giving options to choose menu options until they choose to exit
-        pass
-
-if __name__ == "__main__":
-    main()
+pass
 
 
 
 def volume_of_sphere():
     r = input("enter a radius")
-    return  4/3 * math.pi * r^3
+    return  4/3 * math.pi * r**3
 
 
 def area_of_sphere():
     r = input("enter a radius")
-    return 4* math.pi *r^2
+    return 4* math.pi *r**2
 
 def area_of_sqaure():
     x=input
-    total=x^2
-    print(total)
-
+    ttal=x**2
+    print(ttal)
+    return ttal
 def volume_of_sqaure():
-    x = input("enter an aside ")
-    return x^3
+    x = int(input("enter a length "))
+    final=x**3
+    print("The Volume is",final)
+ 
 
 def volume_of_rectangle():
     L = input("enter a length ")
@@ -83,14 +68,11 @@ def usd_to_cad(value):
  
 pass
 def calcTax():
- x=input("Enter Product Price Before Tax")
- tax=x*0.12
- total=x+tax
- print("Amount Of Taxes{tax}. Total Amount",total)
-pass
+    x=input("Enter Product Price Before Tax")
+    tax=x*0.12
+    total=x+tax
+    print("Amount Of Taxes{tax}. Total Amount",total)
+    return total
 
 
-
-
-menu
-
+menu()
