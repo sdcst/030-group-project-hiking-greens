@@ -6,83 +6,81 @@
 import math
 def menu():
     while True:
-        x = input(" For The Volume Of A Square Enter: '1'\n For The Area Of A Square Enter: '2'\n For The Volume Of A Rectangle Enter: '3'\n For The Area Of A Rectangle Enter: '4'\n For The Volume Of A Sphere Enter: '5'\n For The Area Of A Sphere Enter: '6'\n For Sales Tax Enter: '7'\n For Canadian To AMerican Currency Exchange Enter: '8'\n To Exit Program Enter: '9'\n ")
-        
-        if x==1:
-            volume_of_square()
-        elif x==2:
-            area_of_square()
-        elif x==3:
-            volume_of_rectangle()
-        elif x==4:
-            area_of_rectangle()
-        elif x==5:
-            volume_of_sphere()
-        elif x==6:
-            area_of_sphere()
-        elif x==7:
-            calcTax()
-        elif x==8:
-            usd_to_cad()
-        elif x==9:
-    
-        else:
-            print("Invild Command")
+        try:
+            x = int(input(" For The Volume Of A Square Enter: '1'\n For The Area Of A Square Enter: '2'\n For The Volume Of A Rectangle Enter: '3'\n For The Area Of A Rectangle Enter: '4'\n For The Volume Of A Sphere Enter: '5'\n For The Area Of A Sphere Enter: '6'\n For Sales Tax Enter: '7'\n For Canadian To AMerican Currency Exchange Enter: '8'\n To Exit Program Enter: '9'\n "))
+            if x==1:
+                volume_of_square()
+            elif x==2:
+                area_of_square()
+            elif x==3:
+                volume_of_rectangle()
+            elif x==4:
+                area_of_rectangle()
+            elif x==5:
+                volume_of_sphere()
+            elif x==6:
+                area_of_sphere()
+            elif x==7:
+                calcTax()
+            elif x==8:
+                usd_to_cad()
+            elif x==9:
+                break
+        except ValueError:
+            print(" Invild Command")
+            
 
-
-pass
-
-
+            
 def volume_of_square():
-    x = int(input("This Is Volume Of Square Enter A Length: "))
+    x = int(input(" This Is Volume Of Square Enter A Length: "))
     final=x**3
-    print("The Volume Is",final)
+    print(f" The Volume Is{final}\n\n")
     return final
 
 def area_of_square():
-    x=int(input("This Is Area Of Square, Enter A Side: "))
+    x=int(input(" This Is Area Of Square, Enter A Side: "))
     ttal=x**2
-    print(f"The Area Is {ttal}")
+    print(f" The Area Is {ttal}\n\n")
     return ttal
 
 def volume_of_rectangle():
-    L = int(input("This Is Volume Of Rectangle, Enter A Length: "))
-    W = int(input("Enter A Width: "))
-    H = int(input("Enter A Height: "))
+    L = int(input(" This Is Volume Of Rectangle, Enter A Length: "))
+    W = int(input(" Enter A Width: "))
+    H = int(input(" Enter A Height: "))
     ans = L*W*H
-    print(f"The Volume Is {ans}")
+    print(f" The Volume Is {ans}\n\n")
     return ans
 
 def area_of_rectangle():
-    L = int(input("This Is Area Of Rectangle, Enter A Length: "))
-    W = int(input("Enter A Width: "))
+    L = int(input(" This Is Area Of Rectangle, Enter A Length: "))
+    W = int(input(" Enter A Width: "))
     ans = W * L
-    print(f"The Area Is {ans}")
+    print(f" The Area Is {ans}\n\n")
     return(ans)
 
 def volume_of_sphere():
-    r = int(input("This Is Volume Of Sphere, Enter A Radius: "))
+    r = int(input(" This Is Volume Of Sphere, Enter A Radius: "))
     ans = 4/3 * math.pi * r**3
-    print(f"The volume is {ans}")
+    print(f" The volume is {ans}\n\n")
     return ans
 
 def area_of_sphere():
-    r = int(input("This Is Area Of Sphere, Enter A Radius: "))
+    r = int(input(" This Is Area Of Sphere, Enter A Radius: "))
     area =  4* math.pi *r**2
-    print(f"The Area Is {area}")
+    print(f" The Area Is {area}\n\n")
     return area
 
 def usd_to_cad():
-    c=int(input('Enter Amount In USD: '))
+    c=int(input(' Enter Amount In USD: '))
     tootal=c*1.37
-    print(f"The Total Amount Is {tootal}")
+    print(f" The Total Amount Is {tootal}\n\n")
     
 
 def calcTax():
-    x=int(input("This Is The Sales Tax Caluclator, Enter Product Price Before Tax: "))
+    x=int(input(" This Is The Sales Tax Caluclator, Enter Product Price Before Tax: "))
     tax=x*0.12
     total=x+tax
-    print(f"Amount Of Taxes {tax} - Total Amount",total)
+    print(f" Amount Of Taxes {tax} - Total Amount {total}\n\n")
     return total
 
 
